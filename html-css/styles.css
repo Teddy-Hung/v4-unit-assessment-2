@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    font-family: 'Arial, Helvetica, sans-serif';
 }
 
 body{
 }
 
-/*HEADER CONTENT*/
+/* HEADER */
 header{
     padding: 20px;
     height: 100px;
@@ -23,12 +24,10 @@ header{
 header h1{
     color:#53aadd;
     font-size: 45px;
-    font-family: 'Arial, Helvetica, sans-serif', cursive;
     font-weight: 900px;
 }
 
 header span{
-    font-family: 'Arial, Helvetica, sans-serif', cursive;
     margin-left: 60px;
     margin-right: 20px;
     font-size: 20px;
@@ -36,25 +35,97 @@ header span{
 
 }
 
-/*MAIN CONTENT*/
+/* MAIN CONTENT */
 main{
-   padding: 200px;
+   padding: 150px 200px 200px 200px;
    position: relative;
+   display: flex;
+   flex-direction: row;
 }
 
+#left-body-section{
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    border: 2px rgb(230, 229, 229);
+    overflow-wrap: break;
+}
+
+#right-body-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#left-body-section h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#left-body-section article{
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: normal;
+}
+
+/* PROFILE BOX */
 #profile-flex-box{
-    width: 350px;
-    height: 400px;
-    position: absolute;
+    /* box/border/shadow specifications */
+    width: 300px;
+    height: 350px;
     right: 200px;
     border: 2px rgb(230, 229, 229);
     box-shadow: 0px 0px 100px -2px rgb(189, 189, 189);
     border-radius: 5%;
+    position: absolute;
+    /* content specifications */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #profile-icon{
-    width: 250px;
+    width: 220px;
+}
+
+#profile-flex-box h1{
+    margin: 30px 0px 0px 0px;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+/* POPULAR ARTICLES */
+#popular-articles-flex-box{
+    /* box/border/shadow specifications */
+    width: 300px;
+    height: 450px;
+    right: 200px;
+    border: 2px rgb(230, 229, 229);
+    box-shadow: 0px 0px 100px -2px rgb(189, 189, 189);
+    border-radius: 5%;
+    position: absolute;
+    /* content specifications */
+    margin-top: 400px; 
+    display: flex;
     align-items: center;
-    position: flex;
-    
+    flex-direction: column;
+}
+
+#popular-articles-flex-box h1{
+    margin-top: 30px;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+#popular-articles-flex-box ol{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#popular-articles-flex-box li{
+    margin-top: 13px;
 }
