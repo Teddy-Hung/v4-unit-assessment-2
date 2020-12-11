@@ -1,9 +1,11 @@
+/* UNIVERSAL PROPERTIES */
 *{
     box-sizing: border-box;
     font-family: 'Arial, Helvetica, sans-serif';
 }
 
 body{
+    position: relative;
 }
 
 /* HEADER */
@@ -35,9 +37,31 @@ header span{
 
 }
 
+#question-mark-icon{
+    position: fixed;
+    position: flex;
+    align-items: center;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2;
+    
+
+    /* circle specifications */
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: #53aadd;
+}
+
+#question-mark{
+    margin-top: 30%;
+    margin-left: 40%;
+    font-weight: 900;
+}
 /* MAIN CONTENT */
 main{
-   padding: 150px 200px 200px 200px;
+   padding: 150px 200px 0px 200px;
    position: relative;
    display: flex;
    flex-direction: row;
@@ -47,7 +71,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 72%;
-    border: 2px rgb(230, 229, 229);
+    border: 2px rgb(255, 255, 255);
     overflow-wrap: break;
 }
 
@@ -55,7 +79,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-
+/* MAIN ARTICLE TEXT SPECIFICATIONS */
 #left-body-section h2{
     margin-bottom: 30px;
     font-size: 30px;
@@ -66,6 +90,31 @@ main{
     font-size: 20px;
     word-spacing: 2px;
     line-height: normal;
+    margin-bottom: 30px;
+}
+
+/* IMAGE GALLERY */
+#image-gallery-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#image-gallery-content h3{
+    position: absolute;
+    right: 0;
+    margin-bottom: 10px;
+    color: #4a9eb1;
+
+}
+
+#image-gallery-flex-box{
+    justify-content: space-around;
+}
+
+#image-gallery-flex-box img{
+    margin:25px;
+    width:300px;
 }
 
 /* PROFILE BOX */
@@ -93,7 +142,6 @@ main{
     margin: 30px 0px 0px 0px;
     font-size: 30px;
     font-weight: 400;
-
 }
 
 /* POPULAR ARTICLES */
@@ -128,4 +176,21 @@ main{
 
 #popular-articles-flex-box li{
     margin-top: 13px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 20px;
+    height: 85px;
+    width: 100%;
+    background-color: #53aadd;
+    color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1{
+    font-weight: 700;
 }
